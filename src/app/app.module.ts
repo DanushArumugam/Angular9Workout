@@ -13,6 +13,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { HighlightExampleDirective } from './highlight-example.directive';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { WarningAlertComponent } from './warning/warning-alert.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { HighlightExampleDirective } from './highlight-example.directive';
     ParentComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    HighlightExampleDirective
+    HighlightExampleDirective,
+    ServerComponent,
+    ServersComponent,
+    SuccessAlertComponent,
+    WarningAlertComponent
  
    
 
