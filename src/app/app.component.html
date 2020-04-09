@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+<!-- <app-heroes></app-heroes> -->
+<!-- Url link-->
+<nav>
+    <a routerLink="/dashboard">Dashboard</a><br>
+    <a routerLink="/heroes"> Heroes</a><br>
+    <a routerLink="/child1">Child1</a>
+</nav>
+<!-- routing -->
+<div class="row">
+    <div class="column">
+        <span>
+            <router-outlet></router-outlet>
+        </span>
+    </div>
+    <div class="column">
+  
+            <app-name-editor></app-name-editor>
+            <app-profile-editor></app-profile-editor>
+     
+    </div>
+
+
+
+    
+</div>
+<app-messages></app-messages>
+<p appHighlightExample highlightColor="red">HighLightExample</p>
+<p appHighlightExample [highlightColor]="'orange'">Highlighted in orange</p>
+<p appHighlightExample [highlightColor]="color">Highlighted with parent component's color</p>
+<p [appHighlightExample]="color">Highlight me!</p>
+<parent></parent>

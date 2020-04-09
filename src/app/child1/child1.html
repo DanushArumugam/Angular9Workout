@@ -1,0 +1,11 @@
+<div *ngIf="!cityNameFromParent">
+    <input type="text" (keyup)="onNameChange()" [(ngModel)]="userName" placeholder="Enter user name here">
+
+    <input type="text" (keyup)="onPhoneChange()" [(ngModel)]="userPhone" placeholder="Enter user phone number here"><br>
+</div>
+
+<div *ngIf="cityNameFromParent">
+    <strong>City Name: </strong>{{cityNameFromParent}}
+    <strong>State Name: </strong>{{stateNameFromParent}}
+
+</div>

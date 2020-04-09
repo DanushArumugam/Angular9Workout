@@ -1,0 +1,17 @@
+<h6>-------------CHILD TO PARENT--------------------------</h6>
+<span><strong>Name: </strong></span>{{userName}}
+<strong>Phone : </strong>{{userPhone}}<br>
+
+<child1 (nameEvent)="nameEventHandler($event)" (phoneEvent)="phoneEventHandler($event)"></child1>
+
+<!-- <child2 (nameEvent)="nameEventHandler($event)" (phoneEvent)="phoneEventHandler($event)"></child2> -->
+    
+
+<h6>-------------PARENT TO CHILD--------------------------</h6>
+
+
+<div *ngIf="cityName">
+<child1 cityNameFromParent="{{cityName}}" stateNameFromParent="{{stateName}}"></child1>
+</div>
+<input type="text" [(ngModel)]="cityName" placeholder="Enter the city name">
+<input type="text" [(ngModel)]="stateName" placeholder="Enter the State name">
